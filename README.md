@@ -11,13 +11,22 @@ Effortlessly streamline workflows with our AI-powered automation platform. Conne
 
 ## Getting Started
 
-First, run the development server:
+Clone the Project
+
+```bash
+npm git clone https://github.com/rahulp0817/automation-workflow.git
+```
+
+Install Dependencies
 
 ```bash
 npm git clone https://github.com/rahulp0817/automation-workflow.git
 
-npm install
+```
 
+Run the development server
+
+```bash
 npm run dev
 ```
 
