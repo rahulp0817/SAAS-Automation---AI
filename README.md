@@ -1,4 +1,4 @@
-# AI Automation Platform
+# AI Powered Automation Platform
 
 
 ## Automate your workflow seamlessly with FlowGen.
@@ -8,6 +8,7 @@ Effortlessly streamline workflows with our AI-powered automation platform. Conne
 
 - NextJs
 - TypeScript
+- Tailwind CSS
 
 ## Getting Started
 
