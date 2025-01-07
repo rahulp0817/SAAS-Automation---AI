@@ -1,6 +1,10 @@
+"use client";
 import React from "react";
+import { useRouter } from "next/navigation";
+import { MenuIcon } from "lucide-react";
 
 export const Navbar = () => {
+  const router = useRouter();
   return (
     <div>
       <nav className="fixed top-4 left-[6%] right-[6%] z-50 transition-all duration-300 backdrop-blur-2xl shadow-sm rounded-xl">
@@ -21,7 +25,9 @@ export const Navbar = () => {
               >
                 <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
               </svg>
-              <span className="text-xl font-bold ">FlowGen</span>
+              <span className="text-xl font-bold">
+                FlowGen
+              </span>
             </div>
 
             {/* Navigation Links */}
@@ -54,12 +60,19 @@ export const Navbar = () => {
 
             {/* Auth Buttons */}
             <div className="flex items-center gap-4">
-              <button className="px-5 py-2.5 text-black rounded-full items-center hover:bg-gray-100 transition-all ease-in duration-200">
+              <button
+                className="hidden md:block lg:block px-5 py-2.5 text-black rounded-full items-center hover:bg-gray-100 transition-all ease-in duration-200"
+                onClick={() => router.push("/signin")}
+              >
                 Log in
               </button>
-              <button className="px-5 py-2.5 bg-black text-white border-black rounded-full hover:bg-blue-500 transition-all ease-in duration-200">
-                Get Started
+              <button
+                className="hidden md:block lg:block px-5 py-2.5 bg-black text-white border-black rounded-full hover:bg-blue-500 transition-all ease-in duration-200"
+                onClick={() => router.push("/signup")}
+              >
+                <p className="text-md ">Get Started</p>
               </button>
+              <MenuIcon className="lg:hidden" />
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <Spotlightlanding />
       <Navbar />
-      <div className="-mt-60 relative z-0 ">
+      {/* <div className="-mt-60 relative z-0 ">
         <Image
           src={Hero}
           alt="Hero video fallback"
@@ -19,7 +19,7 @@ export default function Home() {
           height={1080}
           className="w-full"
         />
-      </div>
+      </div> */}
       <div className="flex min-h-screen flex-col justify-between  p-24 mt-16 ">
         <Dashboard />
       </div>
@@ -35,7 +35,7 @@ export default function Home() {
             AutoFlow. Build powerful automations, collaborate seamlessly, and
             focus on what matters most.
           </p>
-          <Buttonanimate/>
+          <Buttonanimate />
           {/* <div className="flex justify-center gap-6">
             <button className="px-8 py-4 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
               Get Started
